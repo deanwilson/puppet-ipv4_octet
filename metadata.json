@@ -1,0 +1,16 @@
+{
+  "name": "deanwilson-ipv4_octet",
+  "version": "0.0.2",
+  "author": "deanwilson",
+  "summary": "A small(ish) sample Puppet function to return a given octet from an IP Address",
+  "license": "Apache-2.0",
+  "source": "https://github.com/deanwilson/puppet-ipv4_octet.git",
+  "project_page": "https://github.com/deanwilson/puppet-ipv4_octet",
+  "issues_url": "https://github.com/deanwilson/puppet-ipv4_octet/issues",
+  "dependencies": [
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">= 4.2.2 <5.0.0"
+    }
+  ]
+}
