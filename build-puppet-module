@@ -1,0 +1,28 @@
+#!/bin/bash
+set -e
+set -u
+set -x
+
+if [[ $# -lt 1 ]]; then
+  echo "usage: $0 <VERSION> [mock_config]"
+  exit 1
+fi
+
+readonly VERSION=$1
+readonly MOCK_DISTRO_CONFIG=${2:-epel-7-x86_64}
+
+readonly BASEDIR="$HOME/rpmbuild"
+readonly _PROJECT_NAME=puppet-ipv4_octet
+
+mock -r ${MOCK_DISTRO_CONFIG} \
+  --buildsrpm \
+  --resultdir "${BASEDIR}/SRPMS/" \
+  --define "_version ${VERSION}" \
+  --spec "${BASEDIR}/SPECS/${_PROJECT_NAME}.spec" \
+  --sources "${BASEDIR}/SOURCES/v${VERSION}.tar.gz"
+
+mock -r ${MOCK_DISTRO_CONFIG} \
+  --resultdir "${BASEDIR}/RPMS/" \
+  --define "_version ${VERSION}" \
+  ${BASEDIR}/SRPMS/${_PROJECT_NAME}-${VERSION}-*.src.rpm
+
