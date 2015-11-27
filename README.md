@@ -11,3 +11,7 @@ Returns the given octet of an IP Address.
 This function does not yet allow you to extract subselections - such as [1..3]
 
 It has a dependency on puppetlabs-stdlib to work.
+
+### License ###
+
+Apache 2.0 - [Dean Wilson](http://www.unixdaemon.net)
