@@ -1,6 +1,6 @@
 {
   "name": "deanwilson-ipv4_octet",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "deanwilson",
   "summary": "A small(ish) sample Puppet function to return a given octet from an IP Address",
   "license": "Apache-2.0",
