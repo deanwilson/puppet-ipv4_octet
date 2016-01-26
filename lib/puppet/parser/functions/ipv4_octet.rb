@@ -1,7 +1,7 @@
 module Puppet
   module Parser
     module Functions
-      newfunction(:ipv4_octet, :type => :rvalue, :arity => 2, :doc => <<-EOD
+      newfunction(:ipv4_octet, type: :rvalue, arity: 2, doc: <<-EOD
         Returns the given octet of an IP Address.
 
           $first = ipv4_octet('10.11.12.13', 0) # returns 10
@@ -11,7 +11,7 @@ module Puppet
       EOD
       ) do |args|
         unless args.length == 2
-          fail ArgumentError, ("ipv4_octet(): wrong number of arguments (#{args.length} must be 2)")
+          fail ArgumentError, "ipv4_octet(): wrong number of arguments (#{args.length} must be 2)"
         end
 
         ipaddress = args[0]
