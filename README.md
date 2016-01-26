@@ -1,6 +1,9 @@
 puppet-ipv4_octet
 =================
 
+[![Build Status](https://travis-ci.org/deanwilson/puppet-ipv4_octet.svg?branch=master)](https://travis-ci.org/deanwilson/puppet-ipv4_octet)
+[![Puppet Forge](https://img.shields.io/puppetforge/v/deanwilson/ipv4_octet.svg)](https://forge.puppetlabs.com/deanwilson/ipv4_octet)
+
 A small(ish) sample Puppet function to return a given octet from an IP Address
 
 Returns the given octet of an IP Address.
