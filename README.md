@@ -15,6 +15,12 @@ This function does not yet allow you to extract subselections - such as [1..3]
 
 It has a dependency on puppetlabs-stdlib to work.
 
+## Installation
+
+You can install this module from [PuppetForge](https://forge.puppet.com/):
+
+    puppet module install deanwilson-ipv4_octet
+
 ### License ###
 
 Apache 2.0 - [Dean Wilson](http://www.unixdaemon.net)
